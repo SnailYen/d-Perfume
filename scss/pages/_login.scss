@@ -1,0 +1,65 @@
+.sub-nav{
+    background: $color-primary;
+    a{
+        color: $text-color-light;
+        padding: 4px 2px;
+        margin: 10px 12px;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid $text-color-light;
+        }
+    }
+}
+@include mobile{
+    .sub-nav{
+        display: none;
+    }
+}
+.login{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .login-img{
+        width: 65%;
+        height: 730px;
+        background-image: url(../../img/login1.jpg);
+        background-size: cover;
+        background-position: -160px 0;
+    }
+    .login-info{
+        width: 32%;
+        h2{
+            margin-bottom: 12px;
+        }
+        label{
+            line-height: 22px;
+        }
+        .login-bottoms{
+            margin-top: 36px;
+            a{
+                display: inline-block;
+                color: $color-primary;
+            }
+            .btn-dark{
+                color: $text-color-light;  
+            }
+        }
+    }
+}
+@include mobile{
+    .login{
+        margin-top: 40px;
+        margin-bottom: 106px;
+        flex-direction: column;
+        .login-img, .login-info{
+            width: 100%;
+            margin-bottom: 28px;
+        }
+        .login-img{
+            height: 220px;
+            background-position: 0 0;
+        }
+        .login-info input{
+            max-width: 345px;
+        }
+    }
+}

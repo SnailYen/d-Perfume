@@ -1,0 +1,47 @@
+header{
+    padding: 9px 0;
+    .logo{
+        width: 128px;
+    }
+    .nav{
+        color: $gray-02;
+        a{
+            display: inline-flex;
+            padding: 7px;
+            margin-left: 23px;
+            .material-icons{
+                color: $gray-02;
+            }
+            &:hover{
+                color: $color-primary;
+                .material-icons{
+                    color: $color-primary;
+                }
+            }
+        }
+        .cartNum{
+            display: none;
+            width: 16px;
+            height: 13px;
+            text-align: center;
+            font-size: 12px;
+            line-height: 13px;
+            color: $text-color-light;
+            top: 5px;
+            right: 5px;
+            background: $color-primary;
+            border-radius: 50%;
+        }
+    }
+   
+}
+@include mobile{
+    header .nav{
+        .mobile-hidden{
+            display:none;
+        }
+        .cartNum{
+            display: block;
+        }
+    }
+}

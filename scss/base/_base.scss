@@ -1,0 +1,27 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+input{
+    max-width: 350px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+body{
+    color:$text-color-dark;
+    // font-family:
+}
+.material-icons{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 3px;
+    color: $icon-color;
+}

@@ -1,0 +1,41 @@
+.subscribe{
+    background-image: url(../img/index10.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0px -300px;
+    padding: 312px 0 112px ;
+    h4{
+        color: $gray-02;
+        margin-bottom: 20px;
+    }
+    .input-email{
+        width: 350px;
+        input{
+            width: 350px;
+            height: 60px;
+            border: 2px solid $color-primary;
+            border-radius: 4px;
+        }
+        .btn-subscribe{
+            width: 130px;
+            padding: 20px 26px;
+            background-color: $color-primary;
+            border: 2px solid $color-primary;
+            border-radius: 0 4px 4px 0;
+            color: $text-color-light;
+            top: 0; right: 0;
+            z-index: 99px;
+        }
+    }
+}
+@include mobile{
+    .subscribe{
+        background-position: 0px 0px;
+        .input-email{
+            width: auto;
+            input{
+                width: 100%;
+            }
+        }
+    }
+}

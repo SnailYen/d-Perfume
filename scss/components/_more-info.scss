@@ -1,0 +1,7 @@
+.more-info{
+    color: $color-secondary;
+    display: inline-block;
+    &:hover{
+        background-image: linear-gradient(0, $color-secondary 15%,transparent 15.01%);
+    }
+}

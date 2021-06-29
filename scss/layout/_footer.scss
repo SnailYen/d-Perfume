@@ -1,0 +1,29 @@
+footer{
+    color:$text-color-light;
+    background: $color-primary;
+    padding: 10px 0;
+    .copyright{
+        p{
+            line-height: 38px;
+            padding-top: 10px;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+    }
+    .bottom-menu {
+        li a{
+        color:$text-color-light;
+        padding: 0 5px;
+        margin-left: 26px;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid $text-color-light;
+        }
+        }
+    }
+}
+@include mobile{
+    .mobile-hidden{
+        display: none;
+    }
+}
